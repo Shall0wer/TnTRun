@@ -1,0 +1,4 @@
+name: TnTRun
+version: '${project.version}'
+main: fr.shall0wer.tntrun.TnTRun
+authors: [ Shall0wer ]
