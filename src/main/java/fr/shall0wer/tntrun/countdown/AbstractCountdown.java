@@ -1,4 +1,4 @@
-package fr.shall0wer.tntrun.contdown;
+package fr.shall0wer.tntrun.countdown;
 
 import org.bukkit.scheduler.BukkitRunnable;
 

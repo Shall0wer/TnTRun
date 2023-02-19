@@ -1,10 +1,10 @@
 package fr.shall0wer.tntrun.game;
 
 import fr.shall0wer.tntrun.TnTRun;
-import fr.shall0wer.tntrun.contdown.AbstractCountdown;
-import fr.shall0wer.tntrun.contdown.EndCountdown;
-import fr.shall0wer.tntrun.contdown.PreStartingCountdown;
-import fr.shall0wer.tntrun.contdown.StartingCountdown;
+import fr.shall0wer.tntrun.countdown.AbstractCountdown;
+import fr.shall0wer.tntrun.countdown.EndCountdown;
+import fr.shall0wer.tntrun.countdown.PreStartingCountdown;
+import fr.shall0wer.tntrun.countdown.StartingCountdown;
 import fr.shall0wer.tntrun.manager.PlayerManager;
 import fr.shall0wer.tntrun.state.GameState;
 import org.bukkit.scheduler.BukkitTask;

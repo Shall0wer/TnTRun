@@ -1,4 +1,4 @@
-package fr.shall0wer.tntrun.contdown;
+package fr.shall0wer.tntrun.countdown;
 
 import fr.shall0wer.tntrun.game.Game;
 import org.bukkit.Bukkit;
