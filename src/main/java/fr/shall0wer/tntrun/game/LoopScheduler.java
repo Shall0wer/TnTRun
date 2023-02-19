@@ -1,6 +1,6 @@
 package fr.shall0wer.tntrun.game;
 
-import fr.shall0wer.tntrun.contdown.AbstractCountdown;
+import fr.shall0wer.tntrun.countdown.AbstractCountdown;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
