@@ -32,7 +32,7 @@ public class PlayerJoinListener implements Listener {
         player.setGameMode(GameMode.ADVENTURE);
         player.teleport(new Location(Bukkit.getWorld("world"), 60, 6, 60));
         for(Player players : Bukkit.getOnlinePlayers()){
-            players.sendMessage("§6[TnTRun] §b" + player.getName() + " §fvient de rejoindre la partie. §7(§b" + nb + "§7/§b" + PlayerManager.getInstance().getMaxPlayers() +"§7)");
+            players.sendMessage("§6[TnTRun] §b" + player.getName() + " §fvient de rejoindre la partie. §7(§b" + nb + "§7/§b" + PlayerManager.getInstance().getMAX_PLAYERS() +"§7)");
         }
         if(Game.getInstance().getState() == GameState.WAITING && PlayerManager.getInstance().canStart()){
             Game.getInstance().preStartingGame();

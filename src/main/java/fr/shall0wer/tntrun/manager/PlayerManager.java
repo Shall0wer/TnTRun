@@ -1,5 +1,6 @@
 package fr.shall0wer.tntrun.manager;
 
+import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 
@@ -9,8 +10,8 @@ import java.util.UUID;
 
 public class PlayerManager {
 
-    private final int MAX_PLAYERS = 8;
-    private final int MIN_PLAYERS = 2;
+    private @Getter final int MAX_PLAYERS = 8;
+    private @Getter final int MIN_PLAYERS = 2;
 
     private List<UUID> gamePlayers = new ArrayList<>();
 
@@ -52,13 +53,4 @@ public class PlayerManager {
     public int getNbPlayers(){
         return gamePlayers.size();
     }
-
-    public int getMaxPlayers() {
-        return MAX_PLAYERS;
-    }
-
-    public int getMinPlayers() {
-        return MIN_PLAYERS;
-    }
-
 }

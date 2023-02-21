@@ -7,11 +7,14 @@ import fr.shall0wer.tntrun.countdown.PreStartingCountdown;
 import fr.shall0wer.tntrun.countdown.StartingCountdown;
 import fr.shall0wer.tntrun.manager.PlayerManager;
 import fr.shall0wer.tntrun.state.GameState;
+import lombok.Getter;
 import org.bukkit.scheduler.BukkitTask;
 
+@Getter
 public class Game {
 
-    private static Game instance = null;
+    private @Getter static Game instance = null;
+
     private GameState state;
 
     private BukkitTask gameTask = null;
@@ -20,18 +23,6 @@ public class Game {
     public Game(){
         instance = this;
         this.state = GameState.WAITING;
-    }
-
-    public static Game getInstance(){
-        return instance;
-    }
-
-    public GameState getState() {
-        return state;
-    }
-
-    public void setState(GameState state) {
-        this.state = state;
     }
 
     // Timers and state
@@ -87,7 +78,4 @@ public class Game {
         }
     }
 
-    public AbstractCountdown getCurrentTask() {
-        return currentTask;
-    }
 }
